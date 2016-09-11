@@ -1,5 +1,8 @@
 <html ng-app="shoppingApp">
 <head>
+
+    <div ng-include="'partial_views/navbar.html'"></div>
+
     <meta charset="utf-8">
     <title>Angular.js Example</title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
@@ -30,6 +33,7 @@
 
 
     <!--L O C A L  C S S   S T Y L E S -------------------------------------------------    -->
+    <link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!--L O C A L  S C R I P T S ----- -------------------------------------------------    -->
@@ -39,9 +43,10 @@
     <script src="controllers/ProductDetailCtrl.js"></script>
 
 
-</head>
-<body>
 
+</head>
+
+<body>
 
 <div ui-view=""></div>
 

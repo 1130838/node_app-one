@@ -1,11 +1,49 @@
-<!doctype html>
-<html lang="en">
+<html ng-app="shoppingApp">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Angular.js Example</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+
+
+    <!--JQUERY SCRIPT BY CDN-->
+    <script defer src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+
+    <!--BOOTSTRAP SCRIPTS BY CDN-->
+    <!--Latest compiled and minified JavaScript-->
+    <script defer
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!--CSS STYLES BY CDN ----------------------    -->
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link defer rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+
+
+    <!--L O C A L  C S S   S T Y L E S -------------------------------------------------    -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--L O C A L  S C R I P T S ----- -------------------------------------------------    -->
+
+    <script src="main.js"></script>
+    <script src="controllers/ProductListCtrl.js"></script>
+    <script src="controllers/ProductDetailCtrl.js"></script>
+
+
 </head>
 <body>
-<p>cenas</p>
+
+
+<div ui-view=""></div>
 
 </body>
 </html>

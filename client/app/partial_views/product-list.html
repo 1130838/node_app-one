@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+<div ng-repeat="product in products ">
+    <!--FIRST COLUMN -->
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src={{product.urlImage}}
+                 alt="..." class="img-responsive">
+            <div class="caption">
+                <h3>{{ product.name }} </h3>
+                <p class="description">
+                    {{product.description}}
+                </p>
+                <p>
+                <div class="clearfix">
+                    <div class="price pull-left" id="price">
+
+                        <strong> {{product.price}} $ </strong>
+                    </div>
+
+                    <div class="pull-right">
+                        <a href="#/{{product.name}}" class="btn btn-primary"
+                           role="button">Details</a>
+
+                        <a href="#" class="btn btn-success pull-middle"
+                           role="button">I want it</a>
+                    </div>
+
+                </div>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--
+<h1>{{totalNumberProducts}} Products in our Shop </h1>
+
+<br>
+Search <input type="text" ng-model="query">
+<p></p>
+<table class="table table-striped">
+    <tr>
+        <th><a href="" ng-click="sortField='name'; reverse = !reverse">
+            Name </a></th>
+        <th>Description</th>
+        <th><a href=""
+               ng-click="sortField='price' ; reverse = !reverse">Price</a></th>
+
+
+    </tr>
+    <tr ng-repeat="product in products | filter: query | orderBy:sortField : reverse">
+        <td><a href="#/ {{product.name}}">{{product.name}}</a></td>
+        <td>{{product.price}}</td>
+        <td>{{product.description}}</td>
+
+
+    </tr>
+</table>-->
+
+
+</body>
+</html>
